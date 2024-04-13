@@ -1,8 +1,8 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family:Arial, sans-serif;
 	background-color: #F5F5F7;
+	font-family:Arial, sans-serif;
 }
   
 header {
@@ -42,8 +42,23 @@ nav ul li a {
 	text-decoration: none;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes scale-up {
+	to { scale: 1.5; }
+}
+
 @keyframes scale-up {
 	to { scale: 1.5; }
+}
+
+@-webkit-keyframes fade-away {
+	to { opacity: 0; }
 }
 
 @keyframes fade-away {
@@ -84,13 +99,17 @@ p{
 }
 
 h1 span:first-child a{
-	animation: fade-away both linear;
+	-webkit-animation: fade-away both linear;
+	        animation: fade-away both linear;
 	animation-timeline: --scroll;
 	animation-range: exit 20% exit 90%;
 }
 
 h1 span:last-child {
-	animation:
+	-webkit-animation:
+		scale-up both ease-in-out,
+		fade-away both linear;
+	        animation:
 		scale-up both ease-in-out,
 		fade-away both linear;
 	animation-timeline: --scroll;
@@ -102,6 +121,7 @@ h1 span:last-child {
 section {
 	position: relative;
 	min-height: 100vh;
+	display: -ms-grid;
 	display: grid;
 	place-items: center;
 }
@@ -120,6 +140,7 @@ section:nth-of-type(2) {
 }
 
 h1 {
+	display: -ms-grid;
 	display: grid;
 }
 
@@ -148,7 +169,8 @@ section div {
 
 /* reset */
 *, *:after, *:before {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .cuerpo {
