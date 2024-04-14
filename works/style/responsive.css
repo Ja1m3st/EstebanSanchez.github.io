@@ -1,16 +1,19 @@
-@media screen and (max-width:1200px){
+
+
+@media screen and (max-width:1400px){
 	.tarjeta {
-		width: 45%;
-	}
-}
-/* @media screen and (max-width:750px){
-	.tarjeta {
-		width: 100%;
-	}
-} */
-@media screen and (max-width:500px){
-	.tarjeta {
-		width: 100%;
+		width: 23%;
 	}
 }
 
+@media screen and (max-width:1200px){
+	.tarjeta {
+		width: 48%;
+	}
+}
+
+@media screen and (max-width:750px){
+	.tarjeta {
+		width: 100%;
+	}
+}

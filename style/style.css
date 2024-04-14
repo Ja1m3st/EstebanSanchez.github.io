@@ -10,9 +10,9 @@ body {
 }
   
 header {
+	padding: 10px;
 	background-color: #F5F5F7;
 	color: rgb(0, 0, 0);
-	padding: 10px 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -135,8 +135,6 @@ h2 {
 	font-size: clamp(2rem, 5vw + 1rem, 6rem);
 	text-align: center;
 }
-
-
 
 :is(h1, h2) {
 	font-size: clamp(2.5rem, 7vw + 1rem, 10rem);
