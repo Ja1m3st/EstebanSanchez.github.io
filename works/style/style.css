@@ -63,6 +63,7 @@ nav ul li a {
 	background-size: cover;
 	background-position: center;
 	object-fit: cover;
+	border-radius: 10px;
 }
 
 .tarjeta:hover .imagen-tarjeta {
