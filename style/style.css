@@ -19,6 +19,7 @@ header {
 	justify-content: space-between;
 	width: 100%;
 	z-index: 1000;
+	overflow-x: hidden;
 }
 
 nav {
@@ -80,7 +81,6 @@ section {
 	place-items: center;	
 }
 
-
 .container-carousel {
     position: relative;
     width: 100%;
@@ -105,6 +105,7 @@ section {
     width: 100%;
     height: 100%;
 	object-fit: cover;
+	object-position: center;
 }
 
 
@@ -143,7 +144,7 @@ h2 {
 }
   
 .tarjeta{
-	width: 23%;
+	width: 22%;
 	height: auto;	
 	margin: 10px;
 	padding: 10px;
